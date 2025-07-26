@@ -6,10 +6,27 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 20%;
+    margin: 2.5rem;
     border: 10px solid black;
 }
 
 .btn-container {
     display: flex;
     justify-content: center;
+}
+
+.yellow {
+    background-color: #FFD93D;
+}
+
+.green {
+    background-color: #6FFFE9;
+}
+
+.blue {
+    background-color: #6C5CE7;
+}
+
+.red {
+    background-color: #FF6B6B;
 }
