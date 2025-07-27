@@ -39,7 +39,8 @@ function levelUp() {
 }
 
 function btnPress() {
-    console.log("btnPress");
+    let btn = this;
+    btnFlash(btn);
 }
 
 let allBtns = document.querySelectorAll(".btn");
