@@ -53,7 +53,8 @@ function checkAns(idx) {
         setTimeout(levelUp, 1000);
     }
   } else {  
-    h2.innerText = `Game Over! press any key to restart`;
+    h2.innerHTML = `Game Over! your score is <br> ${level} <br> press any key to restart`;
+    rest();
   }
 }
 
