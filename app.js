@@ -21,7 +21,14 @@ function btnFlash(btn) {
     btn.classList.add("flash");
     setTimeout(function() {
         btn.classList.remove("flash");
-    }, 1000);   
+    }, 250);   
+}
+
+function userFlash(btn) {
+    btn.classList.add("userFlash");
+    setTimeout(function() {
+        btn.classList.remove("userFlash");
+    }, 250);   
 }
 
 function levelUp() {
@@ -39,6 +46,7 @@ function levelUp() {
 }
 
 function btnPress() {
+    console.log(this);
     let btn = this;
     btnFlash(btn);
 }
