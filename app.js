@@ -44,15 +44,16 @@ function levelUp() {
     console.log(randmIdx);
     gameSeq.push(randColor);
     console.log(gameSeq);
-    gameFlash(randBtn);
 }
 
-function checkAns() {
-    for (let i = 0; i < gameSeq.length; i++) {
-        if (gameSeq[i] !== userSeq[i]) {
-            gameOver();
-        }
+function checkAns(idx) {
+  if (userSeq[idx] === gameSeq[idx]) {
+    if (userSeq.length === gameSeq.length){
+        setTimeout(levelUp, 1000);
     }
+  } else {  
+    h2.innerText = `Game Over! press any key to restart`;
+  }
 }
 
 function btnPress() {
@@ -62,7 +63,7 @@ function btnPress() {
 
     userColor = btn.getAttribute("id");
     userSeq.push(userColor);
-    checkAns();
+    checkAns(userSeq.length - 1);
 }
 
 let allBtns = document.querySelectorAll(".btn");
