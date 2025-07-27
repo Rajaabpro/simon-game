@@ -38,4 +38,10 @@ function levelUp() {
     btnFlash(randBtn);
 }
 
+function btnPress() {
+    console.log("btnPress");
+}
+
+
+
 
