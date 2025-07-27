@@ -42,6 +42,11 @@ function btnPress() {
     console.log("btnPress");
 }
 
+let allBtns = document.querySelectorAll(".btn");
+
+for (let btn of allBtns) {
+    btn.addEventListener("click", btnPress);
+}
 
 
 
