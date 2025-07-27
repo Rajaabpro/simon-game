@@ -47,10 +47,22 @@ function levelUp() {
     gameFlash(randBtn);
 }
 
+function checkAns() {
+    for (let i = 0; i < gameSeq.length; i++) {
+        if (gameSeq[i] !== userSeq[i]) {
+            gameOver();
+        }
+    }
+}
+
 function btnPress() {
     console.log(this);
     let btn = this;
     btnFlash(btn);
+
+    userColor = btn.getAttribute("id");
+    userSeq.push(userColor);
+    checkAns();
 }
 
 let allBtns = document.querySelectorAll(".btn");
