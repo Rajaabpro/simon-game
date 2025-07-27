@@ -32,6 +32,7 @@ function userFlash(btn) {
 }
 
 function levelUp() {
+    userSeq = [];
     level ++;
     h2.innerText = `Level ${level}`;
 
@@ -60,6 +61,7 @@ function btnPress() {
     console.log(this);
     let btn = this;
     btnFlash(btn);
+    userFlash(btn);
 
     userColor = btn.getAttribute("id");
     userSeq.push(userColor);
@@ -72,5 +74,12 @@ for (let btn of allBtns) {
     btn.addEventListener("click", btnPress);
 }
 
+
+function rest() {
+    started = false;
+    gameSeq = [];
+    userSeq = [];
+    level = 0;    
+}
 
 
