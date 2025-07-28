@@ -86,5 +86,3 @@ function rest() {
     userSeq = [];
     level = 0;    
 }
-
-
