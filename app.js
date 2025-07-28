@@ -84,5 +84,5 @@ function rest() {
     started = false;
     gameSeq = [];
     userSeq = [];
-    level = 0;    
+    level = 0;  
 }
