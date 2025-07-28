@@ -54,6 +54,10 @@ function checkAns(idx) {
     }
   } else {  
     h2.innerHTML = `Game Over! your score is <br> ${level} <br> press any key to restart`;
+    document.querySelector("body").style.backgroundColor = "red";
+    setTimeout(function() {
+        document.querySelector("body").style.backgroundColor = "white";
+    }, 1000);
     rest();
   }
 }
