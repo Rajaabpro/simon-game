@@ -38,3 +38,7 @@ body {
 .userFlash {
     background-color: green;
 }
+
+.gameOver {
+    background-color: red;
+}
