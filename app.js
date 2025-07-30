@@ -54,16 +54,16 @@ function checkAns(idx) {
     }
   } else {  
     h2.innerHTML = `Game Over! your score is <br> ${level} <br> press any key to restart`;
-    document.querySelector("body").style.backgroundColor = "red";
+    document.querySelector("body").classList.add("gameOver");
     setTimeout(function() {
-        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").classList.remove("gameOver");
     }, 1000);
     rest();
   }
 }
 
 function btnPress() {
-    console.log(this);
+    // console.log(this);
     let btn = this;
     btnFlash(btn);
     userFlash(btn);
